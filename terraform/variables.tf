@@ -1,11 +1,31 @@
-variable "GOOGLE_REGION" {
+# variable "GOOGLE_REGION" {
+#   type        = string
+#   description = "GCP region to use"
+# }
+
+# variable "GOOGLE_PROJECT" {
+#   type        = string
+#   description = "GCP project name"
+# }
+
+variable "GITHUB_OWNER" {
   type        = string
-  default = "us-central1-f"
-  description = "GCP region to use"
+  description = "GitHub owner repository to use"
 }
 
-variable "GOOGLE_PROJECT" {
+variable "GITHUB_TOKEN" {
   type        = string
-  default = "devops-training-419011"
-  description = "GCP project name"
+  description = "GitHub personal access token"
+}
+
+variable "FLUX_GITHUB_REPO" {
+  type        = string
+  default     = "terraform-flux"
+  description = "Flux GitOps repository"
+}
+
+variable "FLUX_GITHUB_TARGET_PATH" {
+  type        = string
+  default     = "clusters"
+  description = "Flux manifests subdirectory"
 }
