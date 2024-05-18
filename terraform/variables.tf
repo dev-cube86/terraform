@@ -10,6 +10,7 @@
 
 variable "GITHUB_OWNER" {
   type        = string
+  default = "dev-cube86"
   description = "GitHub owner repository to use"
 }
 
