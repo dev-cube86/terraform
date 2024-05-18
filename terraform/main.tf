@@ -30,9 +30,9 @@ module "flux_bootstrap" {
   github_token      = var.GITHUB_TOKEN
 }
 
-terraform {
-  backend "gcs" {
-    bucket = "terraform-state-86"
-    prefix = "terraform/state"
-  }
-}
+# terraform {
+#   backend "gcs" {
+#     bucket = "terraform-state-86"
+#     prefix = "terraform/state"
+#   }
+# }
